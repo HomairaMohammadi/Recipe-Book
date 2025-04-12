@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Recipe</title>
+</head>
+<body>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="add recipe.html">Add Recipe</a></li>
+    <li><a href="recipe list.html">Recipe List</a></li>
+  </ul>
+
+  <h1>Add a New Recipe</h1>
+
+  <form action="#" method="post">
+    
+    <!-- Recipe Name -->
+    <label for="recipeName">Recipe Name:</label><br>
+    <input type="text" id="recipeName" name="recipeName" required>
+    <br><br>
+
+    <!-- Ingredients -->
+    <label for="ingredients">Ingredients:</label><br>
+    <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+    <br><br>
+
+    <!-- Cooking Instructions -->
+    <label for="instructions">Cooking Instructions:</label><br>
+    <textarea id="instructions" name="instructions" rows="5" required></textarea>
+    <br><br>
+
+    <!-- Image URL -->
+    <label for="image">Image URL:</label><br>
+    <input type="text" id="image" name="image">
+    <br><br>
+
+    <!-- Recipe Category -->
+    <label for="category">Recipe Category:</label><br>
+    <select id="category" name="category" required>
+      <option value="">--Select Category--</option>
+      <option value="desserts">Desserts</option>
+      <option value="appetizers">Appetizers</option>
+      <option value="main">Main Course</option>
+      <option value="vegan">Vegan</option>
+    </select>
+    <br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Add Recipe">
+
+  </form>
+</body>
+</html>
